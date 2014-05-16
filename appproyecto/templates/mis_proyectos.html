@@ -1,0 +1,26 @@
+{% if lista_proyectos %}
+    <ul>
+    {% for proyecto in lista_proyectos %}
+        <!--<li><a href="/appencuesta/{{ poll.id }}/">{{ poll.question_text }}</a></li>-->
+        <!--<li><a href="{% url 'detail' poll.id %}">{{ poll.question_text }}</a></li>-->
+        <li>{{ proyecto.nombre_proyecto}}</li>
+        <!--<li><a href="{% url 'appencuesta:detail' proyecto.id %}">{{ proyecto.question }}</a></li>-->
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay proyectos disponibles.</p>
+{% endif %}
+
+
+
+
+<!--{% if latest_poll_list %}
+    <ul>
+    {% for poll in latest_poll_list %}
+        <li><a href="/polls/{{ poll.id }}/">{{ poll.question }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+-->

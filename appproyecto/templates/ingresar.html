@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Ingresar{% endblock %}
+
+{% block content %}
+<div class="container">
+   
+    <section>
+      <form role="form" action="" method="post">
+        <h1 class="col-md-12 text-center"><legend><strong>Registro</strong></legend></h1>
+
+        <fieldset class="col-md-9 col-md-offset-1">
+          <legend>
+          <h2>Ingrese sus datos: </h2>
+          </legend>
+          <ul class="col-md-4 col-md-offset-1">
+            <li>
+              <div class="form-group">
+                <label for="nombre">Nombres: </label>
+                <input class="form-control" type="text" id="nombre" required>
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="apellido">Apellidos: </label>
+                <input class="form-control" type="text" id="apellido" required>
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="email">Email: </label>
+                <input class="form-control" type="email" id="email"  required/>
+              </div>
+            </li>
+            <li>
+              <div class="form-group">
+                <label for="pass">Clave: </label>
+                <input class="form-control" type="password" id="pass"  required/>
+              </div>
+            </li>
+          </ul>
+          <div class="form-group">
+            <input class="form-control btn btn-primary" type="submit" value="Ingresar">
+            <input class=" form-control btn btn-primary" type="reset" value="Borrar">
+          </div>
+        </fieldset>
+       
+
+      </form>
+</section>
+
+<section>
+  <form role="form" action="" method="post">
+    <h2><legend> </legend></h2>
+    <fieldset class="col-md-9 col-md-offset-1">
+      <legend>
+        <h2>Inicio sesion:</h2>
+      </legend>
+      <ul class="col-md-4 col-md-offset-1">
+        <li class="form-group">
+          <label for="nombre">Nombre: </label>
+          <input class="form-control" type="text" id="nombre" required>
+        </li>
+          <li class="form-group">
+              <label for="pass">Clave: </label>
+              <input class="form-control" type="password" id="pass"  required/>
+          </li>
+      </ul>
+      <div class="form-group">
+        <input class="form-control btn btn-primary" type="submit" value="Ingresar">
+        <input class="form-control btn btn-primary" type="reset" value="Borrar">
+      </div>
+    </fieldset>
+
+  </form>
+</section>
+    
+  </div>
+{% endblock %}

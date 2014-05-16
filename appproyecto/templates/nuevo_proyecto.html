@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block title %}Proyecto{% endblock %}
+
+{% block content %}
+<div class="container">
+  
+
+    <section >
+      <form role="form" action="" method="post">
+        <fieldset class="col-md-9 col-md-offset-1">
+          <legend>
+            <h2>Datos Generales:</h2>
+          </legend>
+          <ul>
+            <li class="form-group">
+              <label for="nombre">Nombre Proyecto: </label>
+              <input class="form-control" type="text" id="nombre" required>
+            </li>
+            <li class="form-group">
+              <label for="encargado">Encargado Proyecto: </label>
+              <input class="form-control" type="text" id="encargado" required>
+            </li>
+            <li class="form-group">
+              <label for="fecha-inicio">Fecha de Inicio</label>
+              <input class="form-control" type="date" id="fecha-inicio"/>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="col-md-9 col-md-offset-1">
+          <legend>
+            <h2>Agregar Tarea:</h2>
+          </legend>
+          <ul>
+            <li class="form-group">
+              <label for="tarea">Nombre Tarea: </label>
+              <input class="form-control" type="text" id="tarea" required>
+            </li>
+            <li class="form-group">
+              <label for="encargadotarea">Encargado Tarea: </label>
+              <input class="form-control" type="text" id="encargadotarea" required>
+            </li>
+            <li class="form-group">
+              <label for="fecha">Fecha de Inicio</label>
+              <input class="form-control" type="date" id="fecha"/>
+            </li>
+          </ul>
+          <input class="form-control btn btn-primary" type="submit" value="Nuevo Proyecto">
+          <input class="form-control btn btn-primary" type="reset" value="Borrar">
+        </fieldset>
+
+  </form>
+</section>
+    
+  </div>  
+{% endblock %}
